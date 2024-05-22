@@ -14,6 +14,7 @@
 		181FC7932BF6613400C5D6B6 /* MortgageApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181FC7912BF6613400C5D6B6 /* MortgageApp.xcdatamodeld */; };
 		181FC7952BF6613500C5D6B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181FC7942BF6613500C5D6B6 /* Assets.xcassets */; };
 		181FC7982BF6613500C5D6B6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 181FC7972BF6613500C5D6B6 /* Base */; };
+		187BB20E2BFCFB7B0064D3AA /* UiView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB20D2BFCFB7B0064D3AA /* UiView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		181FC7942BF6613500C5D6B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181FC7972BF6613500C5D6B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181FC7992BF6613500C5D6B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187BB20D2BFCFB7B0064D3AA /* UiView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		181FC77C2BF6613400C5D6B6 = {
 			isa = PBXGroup;
 			children = (
+				187BB20D2BFCFB7B0064D3AA /* UiView+Extension.swift */,
 				181FC7872BF6613400C5D6B6 /* MortgageApp */,
 				181FC7862BF6613400C5D6B6 /* Products */,
 			);
@@ -143,6 +146,7 @@
 			files = (
 				181FC78D2BF6613400C5D6B6 /* ViewController.swift in Sources */,
 				181FC7892BF6613400C5D6B6 /* AppDelegate.swift in Sources */,
+				187BB20E2BFCFB7B0064D3AA /* UiView+Extension.swift in Sources */,
 				181FC78B2BF6613400C5D6B6 /* SceneDelegate.swift in Sources */,
 				181FC7932BF6613400C5D6B6 /* MortgageApp.xcdatamodeld in Sources */,
 			);
