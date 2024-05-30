@@ -43,7 +43,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SKr-D5-dfP">
                                                 <rect key="frame" x="40.333333333333343" y="11.333333333333345" width="302.66666666666663" height="18.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nhi-rE-ktY">
                                                 <rect key="frame" x="18" y="35" width="317" height="31"/>
@@ -95,14 +95,14 @@
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CzT-C6-mWS">
                                                 <rect key="frame" x="40.333333333333343" y="11.333333333333316" width="302.66666666666663" height="18.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="downPaymentAction:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="TF4-6D-DgM"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ABx-jN-1Is">
                                                 <rect key="frame" x="18" y="35" width="317" height="31"/>
                                                 <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                <connections>
+                                                    <action selector="downPaymentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Uz5-1G-bxv"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tableBackgroundColor"/>
@@ -138,23 +138,23 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63v-EH-uMo">
                                         <rect key="frame" x="20" y="475" width="353" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nab-Dg-DGX">
-                                                <rect key="frame" x="20" y="10" width="10.333333333333336" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nab-Dg-DGX">
+                                                <rect key="frame" x="20" y="10" width="16" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TED-U7-AWr">
-                                                <rect key="frame" x="40.333333333333343" y="11.333333333333373" width="302.66666666666663" height="18.666666666666671"/>
+                                                <rect key="frame" x="46" y="11.333333333333373" width="297" height="18.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="interestRateAction:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="4Zo-wW-9wr"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Oq-kK-RgY">
                                                 <rect key="frame" x="18" y="35" width="317" height="31"/>
                                                 <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                <connections>
+                                                    <action selector="interestRateAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gra-y5-kC6"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tableBackgroundColor"/>
