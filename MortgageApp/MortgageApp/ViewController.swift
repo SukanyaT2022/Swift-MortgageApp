@@ -24,10 +24,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var interestRateSlider: UISlider!
     
-    
     @IBOutlet weak var calculateButton: UIButton!
     
-    
+    let yearArray = [30,20,15,10]
     var minHomePrice = 100000
     var maxHomePrice = 2000000
     var minDownPayment = 20000
@@ -42,7 +41,7 @@ class ViewController: UIViewController {
     }
     var downPayment = 20000
     var interestRate = 2.0
-    
+    var year = 30 // default value when app atarts
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,8 +107,9 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func loanYearSegmentAction(_ sender: Any) {
+    @IBAction func loanYearSegmentAction(_ sender: UISegmentedControl) {
         self.view.endEditing(true)//system know user done with typring input box -user end typing and go next input type -mean end typeing first box
+        year = yearArray[sender.selectedSegmentIndex]
     }
     
     @IBAction func interestRateAction(_ sender: Any) {
@@ -119,6 +119,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateActionButton(_ sender: Any) {
+        let loanAmount = Double(homePrice - downPayment)
+        let numPayment = Double(year * 12)
+        let rate = (interestRate / 100)/12
+        let emi = loanAmount * rate / (1 - pow(1 + rate, -numPayment))
+        print("EMI = \(emi)")
     }
 }
 extension ViewController : UITextFieldDelegate{

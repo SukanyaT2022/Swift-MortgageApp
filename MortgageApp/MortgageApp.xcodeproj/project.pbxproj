@@ -14,6 +14,9 @@
 		181FC7932BF6613400C5D6B6 /* MortgageApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181FC7912BF6613400C5D6B6 /* MortgageApp.xcdatamodeld */; };
 		181FC7952BF6613500C5D6B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181FC7942BF6613500C5D6B6 /* Assets.xcassets */; };
 		181FC7982BF6613500C5D6B6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 181FC7972BF6613500C5D6B6 /* Base */; };
+		18577F682C10C1140004FF13 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 18577F672C10C1140004FF13 /* DGCharts */; };
+		18577F6A2C10C1140004FF13 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 18577F692C10C1140004FF13 /* DGChartsDynamic */; };
+		18577F6C2C10C16F0004FF13 /* ShowResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18577F6B2C10C16F0004FF13 /* ShowResultScreen.swift */; };
 		187BB20E2BFCFB7B0064D3AA /* UiView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB20D2BFCFB7B0064D3AA /* UiView+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,7 @@
 		181FC7942BF6613500C5D6B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181FC7972BF6613500C5D6B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181FC7992BF6613500C5D6B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18577F6B2C10C16F0004FF13 /* ShowResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowResultScreen.swift; sourceTree = "<group>"; };
 		187BB20D2BFCFB7B0064D3AA /* UiView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18577F6A2C10C1140004FF13 /* DGChartsDynamic in Frameworks */,
+				18577F682C10C1140004FF13 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +75,7 @@
 				181FC7962BF6613500C5D6B6 /* LaunchScreen.storyboard */,
 				181FC7992BF6613500C5D6B6 /* Info.plist */,
 				181FC7912BF6613400C5D6B6 /* MortgageApp.xcdatamodeld */,
+				18577F6B2C10C16F0004FF13 /* ShowResultScreen.swift */,
 			);
 			path = MortgageApp;
 			sourceTree = "<group>";
@@ -89,6 +96,10 @@
 			dependencies = (
 			);
 			name = MortgageApp;
+			packageProductDependencies = (
+				18577F672C10C1140004FF13 /* DGCharts */,
+				18577F692C10C1140004FF13 /* DGChartsDynamic */,
+			);
 			productName = MortgageApp;
 			productReference = 181FC7852BF6613400C5D6B6 /* MortgageApp.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 181FC77C2BF6613400C5D6B6;
+			packageReferences = (
+				18577F662C10C1140004FF13 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 181FC7862BF6613400C5D6B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +163,7 @@
 				187BB20E2BFCFB7B0064D3AA /* UiView+Extension.swift in Sources */,
 				181FC78B2BF6613400C5D6B6 /* SceneDelegate.swift in Sources */,
 				181FC7932BF6613400C5D6B6 /* MortgageApp.xcdatamodeld in Sources */,
+				18577F6C2C10C16F0004FF13 /* ShowResultScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +384,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18577F662C10C1140004FF13 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18577F672C10C1140004FF13 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18577F662C10C1140004FF13 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		18577F692C10C1140004FF13 /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18577F662C10C1140004FF13 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		181FC7912BF6613400C5D6B6 /* MortgageApp.xcdatamodeld */ = {
