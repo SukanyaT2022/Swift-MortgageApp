@@ -124,6 +124,16 @@ class ViewController: UIViewController {
         let rate = (interestRate / 100)/12
         let emi = loanAmount * rate / (1 - pow(1 + rate, -numPayment))
         print("EMI = \(emi)")
+    //step 1- build connection to next screen first -perform segue trigger segue- connection to next screen
+        performSegue(withIdentifier: "connectSummary", sender: emi)
+    }
+//    type prepare- step 2 after perform segway - to pass data to the destination- montly after calculate-emi-line125
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let showresultVC = segue.destination as? ShowResultScreen // we send data to ShowResultScreen
+        showresultVC?.storeEmi = (sender as? Double) ?? 0
+        //storeEmi is variable in ShowResultScreen page - the diestination
+        //if find no data show nothing so 0
+        showresultVC?.homePrice = homePrice //homeprice send to next screen
     }
 }
 extension ViewController : UITextFieldDelegate{

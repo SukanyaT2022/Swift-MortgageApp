@@ -14,11 +14,23 @@
 		181FC7932BF6613400C5D6B6 /* MortgageApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181FC7912BF6613400C5D6B6 /* MortgageApp.xcdatamodeld */; };
 		181FC7952BF6613500C5D6B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181FC7942BF6613500C5D6B6 /* Assets.xcassets */; };
 		181FC7982BF6613500C5D6B6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 181FC7972BF6613500C5D6B6 /* Base */; };
-		18577F682C10C1140004FF13 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 18577F672C10C1140004FF13 /* DGCharts */; };
-		18577F6A2C10C1140004FF13 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 18577F692C10C1140004FF13 /* DGChartsDynamic */; };
 		18577F6C2C10C16F0004FF13 /* ShowResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18577F6B2C10C16F0004FF13 /* ShowResultScreen.swift */; };
+		18577F762C120EB30004FF13 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 18577F752C120EB30004FF13 /* DGCharts */; };
 		187BB20E2BFCFB7B0064D3AA /* UiView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BB20D2BFCFB7B0064D3AA /* UiView+Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18577F6E2C120D510004FF13 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		181FC7852BF6613400C5D6B6 /* MortgageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortgageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,8 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18577F6A2C10C1140004FF13 /* DGChartsDynamic in Frameworks */,
-				18577F682C10C1140004FF13 /* DGCharts in Frameworks */,
+				18577F762C120EB30004FF13 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +101,7 @@
 				181FC7812BF6613400C5D6B6 /* Sources */,
 				181FC7822BF6613400C5D6B6 /* Frameworks */,
 				181FC7832BF6613400C5D6B6 /* Resources */,
+				18577F6E2C120D510004FF13 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,8 +109,7 @@
 			);
 			name = MortgageApp;
 			packageProductDependencies = (
-				18577F672C10C1140004FF13 /* DGCharts */,
-				18577F692C10C1140004FF13 /* DGChartsDynamic */,
+				18577F752C120EB30004FF13 /* DGCharts */,
 			);
 			productName = MortgageApp;
 			productReference = 181FC7852BF6613400C5D6B6 /* MortgageApp.app */;
@@ -129,7 +140,7 @@
 			);
 			mainGroup = 181FC77C2BF6613400C5D6B6;
 			packageReferences = (
-				18577F662C10C1140004FF13 /* XCRemoteSwiftPackageReference "Charts" */,
+				18577F742C120EB30004FF13 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 181FC7862BF6613400C5D6B6 /* Products */;
 			projectDirPath = "";
@@ -386,7 +397,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		18577F662C10C1140004FF13 /* XCRemoteSwiftPackageReference "Charts" */ = {
+		18577F742C120EB30004FF13 /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts.git";
 			requirement = {
@@ -397,15 +408,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		18577F672C10C1140004FF13 /* DGCharts */ = {
+		18577F752C120EB30004FF13 /* DGCharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 18577F662C10C1140004FF13 /* XCRemoteSwiftPackageReference "Charts" */;
+			package = 18577F742C120EB30004FF13 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = DGCharts;
-		};
-		18577F692C10C1140004FF13 /* DGChartsDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 18577F662C10C1140004FF13 /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = DGChartsDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 
